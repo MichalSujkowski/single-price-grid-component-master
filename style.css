@@ -40,6 +40,8 @@ body {
     width: 280px;
     min-height: 545px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.2) 0 4px 6px -2px;
+
 }
 
 .community, .why-us, .subscription {
@@ -126,4 +128,27 @@ button {
 
 .why-us ul li {
     margin: 3px 0;
+}
+
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 550px;
+        min-height: 200px;
+    }
+
+    .community {
+        width: 100%;
+        height: 180px;
+        padding: 30px 30px 10px;
+    }
+
+    .why-us, .subscription {
+        width: 50%;
+        height: 200px;
+        padding: 20px 30px;
+    }
+
 }
